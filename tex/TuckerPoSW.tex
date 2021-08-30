@@ -39,23 +39,23 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+	\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+	\item\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -63,138 +63,159 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
-
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://tuckerpo.xyz}{\Large Tucker J. Polomik}} & GitHub: \href{https://github.com/tuckerpo}{https://github.com/tuckerpo}\\
-  Email: \href{mailto:tuckerpo@buffalo.edu}{tuckerpo@buffalo.edu} & LinkedIn: \href{https://linkedin.com/in/tuckerpo}{https://linkedin.com/in/tuckerpo}\\
-  Phone: (845) 381-8007 & Personal Site: \href{https://tuckerpo.xyz}{https://tuckerpo.xyz}
- 
-\end{tabular*}
-
-%-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
-  
-  
-  \resumeSubheading{INFICON}{Syracuse, NY}{
-  	\textbf{Software Engineering Team Lead}}{February 2021 - Present}
-  		\resumeItemListStart
-  			\resumeItem{Lead}{Technical lead and mentor for a team of 2-5 junior software engineers.}
-  			\resumeItem{Planning}{Responsible for intraproject resource planning and final architectural decisions.}
-  			\resumeItem{Technical Screening}{Responsible for technical screenings for potential software \& embedded engineer hires.}
-  			\resumeItem{Intern Mentor}{Served as a mentor for summer software engineering interns.}
-  		\resumeItemListEnd
-  \resumeSubheading{INFICON}{Syracuse, NY}{
-  	\textbf{Software Engineer}}{October 2018 - Present}
-  		\resumeItemListStart
-  			\resumeItem{Full Stack}{Full-stack responsibilities ranging from front-end web development to bare-metal assembly code, and everything in between.  Custom Linux kernel modules, board bring-up, multi-threaded application level programs, custom network layers on top of TCP/IP, and FPGA interfacing.}
-  			\resumeItem{Kernel TTY Line Discipline}{Implemented a TTY line discipline kernel-mode driver, allowing a custom serial protocol to be used over any TTY. C, Linux.}
-  			\resumeItem{Kernel Char Device Driver}{Implemented a kernel-mode char driver for communication to a DSP chip memory mapped to the kernel through an FPGA. C, Linux.}
-  			\resumeItem{FPGA Memory Map over HTTP}{Wrote a web server that exposes FPGA's memory map as addressable over HTTP. C++, Linux}
-  			\resumeItem{FPGA Programming Library}{Wrote a platform agnostic library for programming Intel and Xilinx FPGAs over USB by bit-banging the FPGA bitstream image over the FPGA’s passive serial interface.  C++, Linux, Windows, LibUSB, LibFTDI.}
-  			\resumeItem{Legacy Porting}{Lead a successful effort to port a 650kLOC project from C++98 to C++17.}
-  			\resumeItem{GUI Programming}{Wrote customer-facing and internal tooling GUIs using a variety of different technologies. Electron (JS, HTML, CSS), wxWidgets (C++, Python), .NET WPF (C\#).}
-  			\resumeItem{Yocto}{Wrote Yocto BSPs and recipes for embedded Linux deployments on x86 and ARM boards.}
-  		\resumeItemListEnd
-  		
-  \resumeSubheading
-  {KGB AVIATION SOLUTIONS, LLC.}{West Seneca, NY}
-  {\textbf{Student Embedded Engineer}}{January 2018 - May 2018}
-  \resumeItemListStart
-
-  	 \resumeItem{FDR Interfacing Tool}{Worked with the company CEO and several other interns to build an interfacing system for flight data recorders (FDRs). }
-	  \resumeItem{Reverse Engineering}{Sniffed an RS-422 bus to determine propriety hand-shaking serial packets.}
-	   \resumeItem{FTDI}{Interfaced to a FTDI USB to serial chip from a Pine64 SBC to mock hand-shaking signals to flight data recorders, allowing data extraction.  Concurrently update a GUI over MIPI DSI.}
-	   \iffalse
-	  \resumeItem{Data Download}{Wrote a Python script which pulls data from the FDR and stores it to removable, non-volatile flash memory.}
-	  \fi
-	  \resumeItem{Shipped Product}{Managed to take an idea from the planning stages and progress to a tangible, secure, shippable embedded system in four months time.}
-  \resumeItemListEnd
-  
-% -- Not so sure I need my grocery store experience any longer...
-\iffalse
-\resumeSubheading
+	
+	%----------HEADING-----------------
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\href{https://tuckerpo.xyz}{\Large Tucker J. Polomik}} & GitHub: \href{https://github.com/tuckerpo}{https://github.com/tuckerpo}\\
+		Email: \href{mailto:tuckerpo@buffalo.edu}{tuckerpo@buffalo.edu} & LinkedIn: \href{https://linkedin.com/in/tuckerpo}{https://linkedin.com/in/tuckerpo}\\
+		Phone: (845) 381-8007 & Personal Site: \href{https://tuckerpo.xyz}{https://tuckerpo.xyz}
+		
+	\end{tabular*}
+	
+	%-----------EXPERIENCE-----------------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	
+	
+	\resumeSubheading{INFICON}{Syracuse, NY}{
+		\textbf{Software Engineering Team Lead}}{February 2021 - Present}
+	\resumeItemListStart
+	\resumeItem{Lead}{Technical lead and mentor for a team of 2-5 junior software engineers. Resource planning, architectural decisions.}
+	\resumeItem{Technical Screening}{Responsible for technical screenings for potential software \& embedded engineer hires.}
+	\resumeItemListEnd
+	\resumeSubheading{INFICON}{Syracuse, NY}{
+		\textbf{Software Engineer}}{October 2018 - Present}
+	\resumeItemListStart
+	\resumeItem{Full Stack}{Full-stack responsibilities ranging from front-end web development to bare-metal assembly code, and everything in between.  Custom Linux kernel modules, board bring-up, multi-threaded application level programs, custom network layers on top of TCP/IP, and FPGA interfacing.}
+	\resumeItem{USB Events}{Wrote a library that propagates USB block device events to any listening clients. C++, libudev.}
+	\resumeItem{DBus Client}{Wrote code to control charging of smart batteries (SBS) via DBus client calls. C++, qtdbus, dbus.}
+	\resumeItem{Serial Kernel Driver}{Linux kernel driver that asynchronously (de)serializes data via USB. Protocol followed a TCP like sequence ID structure, allowing the kernel module to handle dropped bytes transparently to userspace applications.}
+	\resumeItem{Code generator}{Python library which parses XML and generates C++ atomic getters/setters. Removes burden of thinking about synchronization primitives in a heavily multi-threaded codebase.}
+	\resumeItem{Build Pipeline}{Configured a Jenkins server for continuous integration. Rejects/approves commits based on static analysis checks.}
+	\resumeItem{GUIs}{Wrote GUI programs targetting desktop and embedded touchscreen applications. C++ (Qt, wxWidgets, MFC), C\# (WPF)}
+	\resumeItem{FPGA Memory over HTTP}{Wrote a web server that exposes FPGA's memory map over HTTP. C++, Linux}
+	\resumeItem{Firmware Replay}{Serialize FPGA messages to a SQLite database. Data queryable via message ID and timestamp. Used for replaying and debugging spurious firmware events.}
+	\resumeItem{FPGA Bootloader}{Wrote a platform agnostic library for programming Intel and Xilinx FPGAs over USB by bit-banging the FPGA bitstream image over the FPGA’s passive serial interface.  C++, Linux, Windows, LibUSB, LibFTDI.}
+	\resumeItem{Yocto}{Wrote Yocto BSPs and recipes for embedded Linux deployments on x86 and ARM boards.}
+	\resumeItemListEnd
+	
+	\iffalse
+	\resumeSubheading
+	{KGB AVIATION SOLUTIONS, LLC.}{West Seneca, NY}
+	{\textbf{Student Embedded Engineer}}{January 2018 - May 2018}
+	\resumeItemListStart
+	
+	\resumeItem{FDR Interfacing Tool}{Worked with the company CEO and several other interns to build an interfacing system for flight data recorders (FDRs). }
+	\resumeItem{Reverse Engineering}{Sniffed an RS-422 bus to determine propriety hand-shaking serial packets.}
+	\resumeItem{FTDI}{Interfaced to a FTDI USB to serial chip from a Pine64 SBC to mock hand-shaking signals to flight data recorders, allowing data extraction.  Concurrently update a GUI over MIPI DSI.}
+	\iffalse
+	\resumeItem{Data Download}{Wrote a Python script which pulls data from the FDR and stores it to removable, non-volatile flash memory.}
+	\fi
+	\resumeItem{Shipped Product}{Managed to take an idea from the planning stages and progress to a tangible, secure, shippable embedded system in four months time.}
+	\resumeItemListEnd
+	\fi
+	
+	% -- Not so sure I need my grocery store experience any longer...
+	\iffalse
+	\resumeSubheading
 	{Hannaford Bros Supermarket}{Pine Bush, NY}
 	{\textbf{Customer Service Clerk}}{March 2014 - September 2015}
 	\resumeItemListStart
-		\resumeItem{Customer Service}
-			{Encouraged continued patronage in a small-town environment. Performed store maintenance. Worked in tandem with new hires to familiarize them with job duties.}
-				\vspace{1.5mm}
+	\resumeItem{Customer Service}
+	{Encouraged continued patronage in a small-town environment. Performed store maintenance. Worked in tandem with new hires to familiarize them with job duties.}
+	\vspace{1.5mm}
 	\resumeItemListEnd
-\fi
-
-
-\resumeSubHeadingListEnd  % -- END WORK EXPERIENCES
-
-
-
-
-
-\iffalse
- %-----------PROJECTS-----------------
-\section{Personal Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{Chip8}
-{Wrote an interpreter for the Chip8 language. Capable of playing Chip8 ROMs. C++, SDL2.} \vspace{1.5mm}
-\resumeSubItem{Pongloader}{x86 assembly pong game that fits in a legacy boot sector.}
-\vspace{1.5mm}
-\iffalse
-\resumeSubItem{Carduino}
-{Write C code on an ATmega328P chip that controls servos and motors on an RC vehicle. Concurrently parse data from an ultrasonic sensor to calculate the vehicle's distance to things around it, changing the angle of the servos to avoid collisions accordingly. }\vspace{1.5mm}
-\fi
-\iffalse
-\resumeSubItem{I'm Hungry}
-{Full-stack developer for a Node.js Yelp clone. Integrated back-end and database MySQL functionality with AWS. Wrote registration, log-in, and session storing modules; regularly back-up database. }\vspace{1.5mm}
-\fi
-\resumeSubItem{MicroSpaceInvaders}{ASCII rendition of the 1978 arcade game written in ARM7 assembly language and C. Developed on bare-metal NXP LPC213x series of ARM microprocessor boards. Programmed and debugged over J-link JTAG.}
-\resumeSubHeadingListEnd
-\fi
-
-%
-%--------PROGRAMMING SKILLS------------
-\section{Programming \& Tooling}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: C++, C, Python, JavaScript, VHDL, x86 and ARM assembly.} }
-     \hfill
-     \item{
-      \textbf{Tools \& Frameworks}{: GNU tools, CMake, git, Yocto, Visual Studio, Atmel Studio, Vivado
-   } 
-\item{
-	\textbf{OS/Platforms}{: Linux, Windows, Bare-metal.} }
-\item {
-	\textbf{Hardware}{: Comfortable reading schematics \& using oscilloscopes, logic analyzers, multi-meters, etc.}}
-
-% -- Don't need notable courses past first job. Keep in case.
-\iffalse
-	\item{\textbf{Notable Courses}{: Operating Systems, Machine Learning, Computer Vision, Hardware-Software Integration} }
-\fi
-} 
- \resumeSubHeadingListEnd
- 
- %-----------EDUCATION-----------------
- \section{Education}
- \resumeSubHeadingListStart
- \resumeSubheading
- {University at Buffalo, School of Engineering}{Buffalo, NY}
- {Bachelor of Science, Computer Engineering, Applied Math}{Awarded September 2018}
-  \resumeSubheading
- {Linux Foundation}{Syracuse, NY}
- {Linux Foundation Certified Engineer - Linux Kernel Internals}{Awarded December 2019}
- \resumeSubHeadingListEnd
- 
- 
-
-
-%-------------------------------------------
+	\fi
+	
+	
+	\resumeSubHeadingListEnd  % -- END WORK EXPERIENCES
+	
+	
+	
+	
+	
+	\iffalse
+	%-----------PROJECTS-----------------
+	\section{Personal Projects}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Chip8}
+	{Wrote an interpreter for the Chip8 language. Capable of playing Chip8 ROMs. C++, SDL2.} \vspace{1.5mm}
+	\resumeSubItem{Pongloader}{x86 assembly pong game that fits in a legacy boot sector.}
+	\vspace{1.5mm}
+	\iffalse
+	\resumeSubItem{Carduino}
+	{Write C code on an ATmega328P chip that controls servos and motors on an RC vehicle. Concurrently parse data from an ultrasonic sensor to calculate the vehicle's distance to things around it, changing the angle of the servos to avoid collisions accordingly. }\vspace{1.5mm}
+	\fi
+	\iffalse
+	\resumeSubItem{I'm Hungry}
+	{Full-stack developer for a Node.js Yelp clone. Integrated back-end and database MySQL functionality with AWS. Wrote registration, log-in, and session storing modules; regularly back-up database. }\vspace{1.5mm}
+	\fi
+	\resumeSubItem{MicroSpaceInvaders}{ASCII rendition of the 1978 arcade game written in ARM7 assembly language and C. Developed on bare-metal NXP LPC213x series of ARM microprocessor boards. Programmed and debugged over J-link JTAG.}
+	\resumeSubHeadingListEnd
+	\fi
+	
+	%
+	%--------PROGRAMMING SKILLS------------
+	\section{Open Source Contributions}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{\href{https://www.pidgin.im/}{Pidgin}}{: Worked on IBM/Sametime protocol layer. C, glib.} }
+	\hfill
+	\item{
+		\textbf{\href{https://github.com/SerenityOS/serenity}{SerenityOS}}{: Worked on userspace Javascript engine. JSON schema validation. C++. 
+		} 
+	}
+	\hfill 
+	\item{
+		\textbf{\href{https://github.com/tuckerpo}{Various Patches}}{: Patches submitted to a variety of projects - open source kernels, games, emulators, etc.}
+	}
+	\resumeSubHeadingListEnd
+	
+	
+	%
+	%--------PROGRAMMING SKILLS------------
+	\section{Programming \& Tooling}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{Languages}{: C++, C, C\#, Python, JavaScript, shell} }
+	\hfill
+	\item{
+		\textbf{Tools \& Frameworks}{: GNU tools, CMake, git, Yocto, Visual Studio, Atmel Studio, Qt, wxWidgets, MFC, WPF
+		} 
+		\item{
+			\textbf{OS/Platforms}{: Linux, Windows, Bare-metal.} }
+		\item {
+			\textbf{Hardware}{: Comfortable reading schematics \& using oscilloscopes, logic analyzers, multi-meters, etc.}}
+		
+		% -- Don't need notable courses past first job. Keep in case.
+		\iffalse
+		\item{\textbf{Notable Courses}{: Operating Systems, Machine Learning, Computer Vision, Hardware-Software Integration} }
+		\fi
+	} 
+	\resumeSubHeadingListEnd
+	
+	%-----------EDUCATION-----------------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{University at Buffalo, School of Engineering}{Buffalo, NY}
+	{Bachelor of Science, Computer Engineering, Applied Math}{Awarded September 2018}
+	\resumeSubheading
+	{Linux Foundation}{Syracuse, NY}
+	{Linux Foundation Certified Engineer - Linux Kernel Internals}{Awarded December 2019}
+	\resumeSubHeadingListEnd
+	
+	
+	
+	
+	%-------------------------------------------
 \end{document}

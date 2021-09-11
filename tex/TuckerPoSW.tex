@@ -90,23 +90,39 @@
 		\textbf{Software Engineering Team Lead}}{February 2021 - Present}
 	\resumeItemListStart
 	\resumeItem{Lead}{Technical lead and mentor for a team of 2-5 junior software engineers. Resource planning, architectural decisions.}
+	\hfill
 	\resumeItem{Technical Screening}{Responsible for technical screenings for potential software \& embedded engineer hires.}
+	\hfill
 	\resumeItemListEnd
 	\resumeSubheading{INFICON}{Syracuse, NY}{
 		\textbf{Software Engineer}}{October 2018 - Present}
-	\resumeItemListStart
-	\resumeItem{Full Stack}{Full-stack responsibilities ranging from front-end web development to bare-metal assembly code, and everything in between.  Custom Linux kernel modules, board bring-up, multi-threaded application level programs, custom network layers on top of TCP/IP, and FPGA interfacing.}
-	\resumeItem{USB Events}{Wrote a library that propagates USB block device events to any listening clients. C++, libudev.}
-	\resumeItem{DBus Client}{Wrote code to control charging of smart batteries (SBS) via DBus client calls. C++, qtdbus, dbus.}
-	\resumeItem{Serial Kernel Driver}{Linux kernel driver that asynchronously (de)serializes data via USB. Protocol followed a TCP like sequence ID structure, allowing the kernel module to handle dropped bytes transparently to userspace applications.}
-	\resumeItem{Code generator}{Python library which parses XML and generates C++ atomic getters/setters. Removes burden of thinking about synchronization primitives in a heavily multi-threaded codebase.}
-	\resumeItem{Build Pipeline}{Configured a Jenkins server for continuous integration. Rejects/approves commits based on static analysis checks.}
-	\resumeItem{GUIs}{Wrote GUI programs targetting desktop and embedded touchscreen applications. C++ (Qt, wxWidgets, MFC), C\# (WPF)}
-	\resumeItem{FPGA Memory over HTTP}{Wrote a web server that exposes FPGA's memory map over HTTP. C++, Linux}
-	\resumeItem{Firmware Replay}{Serialize FPGA messages to a SQLite database. Data queryable via message ID and timestamp. Used for replaying and debugging spurious firmware events.}
-	\resumeItem{FPGA Bootloader}{Wrote a platform agnostic library for programming Intel and Xilinx FPGAs over USB by bit-banging the FPGA bitstream image over the FPGA’s passive serial interface.  C++, Linux, Windows, LibUSB, LibFTDI.}
-	\resumeItem{Yocto}{Wrote Yocto BSPs and recipes for embedded Linux deployments on x86 and ARM boards.}
-	\resumeItemListEnd
+%   \resumeItemListStart
+	\resumeSubHeadingListStart
+    \item{\textbf{Full Stack: }}{Full-stack responsibilities ranging from front-end web development to bare-metal assembly code. Custom Linux kernel modules, board bring-up, multi-threaded application level programs, custom network layers on top of TCP/IP, and firmware interfacing.}
+	\hfill
+    \item{\textbf{USB Events: }}{Wrote a library that propagates USB block device events to any listening clients.}
+	\hfill
+    \item{\textbf{DBus Client: }}{Wrote library to control charging of smart batteries via qtdbus client calls.}
+	\hfill
+    \item{\textbf{Serial Kernel Driver: }}{Linux kernel driver that asynchronously (de)serializes data over USB.}
+	\hfill
+    \item{\textbf{Code Generator: }}{Python library which parses XML and generates C++ atomic accessors in a multithreaded codebase.}
+	\hfill
+    \item{\textbf{Build Pipeline: }}{Configured Jenkins server for continuous integration. Rejects/approves commits based on static analysis checks.}
+	\hfill
+%	\item{\textbf{GUIs}{Wrote GUI programs targetting desktop and embedded touchscreen applications. C++ (Qt, wxWidgets, MFC), C\# (WPF)}
+    \item{\textbf{FPGA Memory over HTTP: }}{Wrote a web server to expose FPGA's memory map via RESTful API.}
+	\hfill
+    \item{\textbf{Firmware Replay: }}{Serialize FPGA messages to a SQLite database. Data queryable via message ID and timestamp.}
+	\hfill
+    \item{\textbf{FPGA Bootloader: }}{Wrote a platform agnostic library for programming Intel and Xilinx FPGAs.}
+	\hfill
+    \item{\textbf{Yocto: }}{Wrote Yocto BSPs and recipes for embedded Linux deployments on x86 boards.}
+	\hfill
+    \item{\textbf{Network Protocol: }}{Developed binary protocol on top of TCP/IP for low latency communication.}
+	\hfill
+    \resumeSubHeadingListEnd
+%	\resumeItemListEnd
 	
 	\iffalse
 	\resumeSubheading
@@ -189,8 +205,8 @@
 		\textbf{Languages}{: C++, C, C\#, Python, JavaScript, shell} }
 	\hfill
 	\item{
-		\textbf{Tools \& Frameworks}{: GNU tools, CMake, git, Yocto, Visual Studio, Atmel Studio, Qt, wxWidgets, MFC, WPF
-		} 
+		\textbf{Tools \& Frameworks}{: GNU tools, CMake, git, Yocto, Visual Studio, Qt, wxWidgets, MFC, WPF
+		}
 		\item{
 			\textbf{OS/Platforms}{: Linux, Windows, Bare-metal.} }
 		\item {

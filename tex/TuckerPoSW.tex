@@ -77,7 +77,7 @@
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 		\textbf{\href{https://tuckerpo.xyz}{\Large Tucker J. Polomik}} & GitHub: \href{https://github.com/tuckerpo}{https://github.com/tuckerpo}\\
 		Email: \href{mailto:tuckerpo@buffalo.edu}{tuckerpo@buffalo.edu} & LinkedIn: \href{https://linkedin.com/in/tuckerpo}{https://linkedin.com/in/tuckerpo}\\
-		Phone: (845) 381-8007 & Personal Site: \href{https://tuckerpo.xyz}{https://tuckerpo.xyz}
+		Phone: (845) 381-8007 & Personal Site: \href{https://www.tuckerpo.xyz}{https://tuckerpo.xyz}
 		
 	\end{tabular*}
 	
@@ -92,7 +92,7 @@
 	\resumeItem{Audio Streaming}{Wrote a novel real-time compression algorithm akin to JPEG for lossy but high fidelity compression of audio streams.}
 	\resumeItem{Lua/C++}{Exposed various C++ APIs to our software solution's internal Lua runtime for customer scripting needs.}
 	\resumeItem{Kernel Modules}{Patched and maintained various upstream and out-of-tree kernel modules. Both bugfixing and modifications for in-house needs.}
-	\resumeItem{Async Network Programming}{Refactor protocol layer network code to be totally async using std::thread, std::async and std::future. This moved us away from a legacy blocking model and allowing customers to make hundreds of network requests in parallel without their performance degrading.}
+	\resumeItem{Async Network Programming}{Refactored protocol layer network code to be  asynchronous using std::thread, std::async and std::future. This moved us away from a legacy blocking model and allowed customers to make thousands of network requests in parallel without their performance degrading.}
 	\resumeItemListEnd
 	
 	
@@ -109,32 +109,20 @@
 	\resumeSubheading{INFICON}{Syracuse, NY}{
 		\textbf{Software Engineer}}{October 2018 - February 2021}
 %   \resumeItemListStart
-	\resumeSubHeadingListStart
-    \item{\textbf{Full Stack: }}{Full-stack responsibilities ranging from front-end web development to bare-metal assembly code. Custom Linux kernel modules, board bring-up, multi-threaded application level programs, custom network layers on top of TCP/IP, and firmware interfacing.}
-	\hfill
-    \item{\textbf{USB Events: }}{Wrote a library that propagates USB block device events to any listening clients.}
-	\hfill
-    \item{\textbf{DBus Client: }}{Wrote library to control charging of smart batteries via qtdbus client calls.}
-	\hfill
-    \item{\textbf{Serial Kernel Driver: }}{Linux kernel driver that asynchronously (de)serializes data over USB.}
-	\hfill
-    \item{\textbf{Code Generator: }}{Python library which parses XML and generates C++ atomic accessors in a multithreaded codebase.}
-	\hfill
-    \item{\textbf{Build Pipeline: }}{Configured Jenkins server for continuous integration. Rejects/approves commits based on static analysis checks.}
-	\hfill
+	\resumeItemListStart
+    \resumeItem{Full Stack}{Full-stack responsibilities ranging from front-end web development to bare-metal assembly code. Custom Linux kernel modules, board bring-up, multi-threaded application level programs, custom network layers on top of TCP/IP, and firmware interfacing.}
+    \resumeItem{USB Events}{Wrote a library that propagates USB block device events to any listening clients.}
+    \resumeItem{DBus Client}{Wrote library to control charging of smart batteries via qtdbus client calls.}
+    \resumeItem{Serial Kernel Driver}{Linux kernel driver that asynchronously (de)serializes data over USB.}
+	\resumeItem{Code Generator}{Python library which parses XML and generates C++ atomic accessors in a multithreaded codebase.}
+	\resumeItem{Build Pipeline}{Configured Jenkins server for continuous integration. Rejects/approves commits based on static analysis checks.}
 %	\item{\textbf{GUIs}{Wrote GUI programs targetting desktop and embedded touchscreen applications. C++ (Qt, wxWidgets, MFC), C\# (WPF)}
-    \item{\textbf{FPGA Memory over HTTP: }}{Wrote a web server to expose FPGA's memory map via RESTful API.}
-	\hfill
-    \item{\textbf{Firmware Replay: }}{Serialize FPGA messages to a SQLite database. Data queryable via message ID and timestamp.}
-	\hfill
-    \item{\textbf{FPGA Bootloader: }}{Wrote a platform agnostic library for programming Intel and Xilinx FPGAs.}
-	\hfill
-    \item{\textbf{Yocto: }}{Wrote Yocto BSPs and recipes for embedded Linux deployments on x86 boards.}
-	\hfill
-    \item{\textbf{Network Protocol: }}{Developed binary protocol on top of TCP/IP for low latency communication.}
-	\hfill
-    \resumeSubHeadingListEnd
-%	\resumeItemListEnd
+	\resumeItem{FPGA Memory over HTTP}{Wrote a web server to expose FPGA's memory map via RESTful API.}
+	\resumeItem{Firmware Replay}{Serialize FPGA messages to a SQLite database. Data queryable via message ID and timestamp.}
+	\resumeItem{FPGA Bootloader}{Wrote a platform agnostic library for programming Intel and Xilinx FPGAs.}
+	\resumeItem{Yocto}{Wrote Yocto BSPs and recipes for embedded Linux deployments on x86 boards.}
+	\resumeItem{Network Protocol}{Developed binary protocol on top of TCP/IP for low latency communication.}
+	\resumeItemListEnd
 	
 	\iffalse
 	\resumeSubheading
@@ -197,12 +185,10 @@
 	\resumeSubHeadingListStart
 	\item{
 		\textbf{\href{https://www.pidgin.im/}{Pidgin}}{: Worked on IBM/Sametime protocol layer. C, glib.} }
-	\hfill
 	\item{
 		\textbf{\href{https://github.com/SerenityOS/serenity}{SerenityOS}}{: Worked on userspace Javascript engine. JSON schema validation. C++. 
 		} 
 	}
-	\hfill 
 	\item{
 		\textbf{\href{https://github.com/tuckerpo}{Various Patches}}{: Patches submitted to a variety of projects - open source kernels, games, emulators, etc.}
 	}

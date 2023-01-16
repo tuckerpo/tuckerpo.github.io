@@ -85,32 +85,35 @@
 	\section{Experience}
 	\resumeSubHeadingListStart
 	
-	\resumeSubheading{CableLabs}{Louisville, CO}{Senior Software Engineer, Advanced Technology Group}{July 2022 - Present}
-	\resumeSubheading{QSC}{Boulder, CO}{Software Engineer}{Nov 2021 - July 2022}
+	\resumeSubheading{CableLabs}{Louisville, CO}{\textbf{Senior Software Engineer, Advanced Technology Group}}{July 2022 - Present}
 	\resumeItemListStart
-	\resumeItem{QSys}{Software solution for controlling audio/video streams and peripherals. Shared Windows/Linux code, lots of C++, TypeScript, and C\#.}
+	\resumeItem{Mobile WiFi}{Developed and contributed to the implementation of Mobile WiFi, a patented CableLabs technology that optimizes the user experience of WiFi networks.}
+	\resumeItem{IEEE/WFA}{Contribute to IEEE and Wi-Fi Alliance specifications for protocols, notably the experimental VBSS addition to the EashMesh specification.}
+	\resumeItem{Embedded}{Wrote secure, low-power C++ code targeting access points running prplOS and contributed to the development of prplMesh, an open source WiFi EasyMesh implementation.}
+	\resumeItem{UI/UX}{Developed a Python/JavaScript network visualization tool for diagnostics, demonstration, and debugging, which was demonstrated to telecom technologists \& board members at the prpl Summit in 2022.}
+	\resumeItem{WiFi Sniffing}{Wrote Linux kernel modules and userspace implementations to expose WiFi link metrics to access points in order to improve network throughput.}
+	\resumeItem{Open Source}{Various patches upstreamed to large networking projects such as hostapd and OpenWRT. See: \href{https://gitlab.com/tpolomik}{https://gitlab.com/tpolomik}}
+	\resumeItemListEnd
+
+	\resumeSubheading{QSC}{Boulder, CO}{\textbf{Software Engineer}}{Nov 2021 - July 2022}
+	\resumeItemListStart
+	\resumeItem{QSys}{Contributed to the development and maintenance of Q-SYS, a complete audio/video integration solution that handles over-the-air firmware updates, management, filtering, I/O expansion, and custom user control interfaces}
 	\resumeItem{Unit Testing}{Introduced unit testing to a large C++ Linux/Windows codebase using Doctest. Integrated coverage metrics with automated Jenkins builds.}
-	\resumeItem{Audio Streaming}{Wrote a novel real-time compression algorithm akin to JPEG for lossy but high fidelity compression of audio streams.}
 	\resumeItem{Lua/C++}{Exposed various C++ APIs to our software solution's internal Lua runtime for customer scripting needs.}
 	\resumeItem{Kernel Modules}{Patched and maintained various upstream and out-of-tree kernel modules. Both bugfixing and modifications for in-house needs.}
-	\resumeItem{Async Network Programming}{Refactored protocol layer network code to be  asynchronous using std::thread, std::async and std::future. This moved us away from a legacy blocking model and allowed customers to make thousands of network requests in parallel without their performance degrading.}
+	\resumeItem{Performance Improvements}{Fixed numerous memory leaks in deployed products, improving stability and customer satisfaction leveraging tools like AddressSanitizer, gdb, and valgrind.}
+	\resumeItem{Multi-threaded Code}{Completed a complete refactoring of an internal C++ SNMP library to be multi-threaded and asynchronous, resulting in improved performance and reliability of the system over the legacy blocking implementation.}
 	\resumeItemListEnd
 	
 	
 	
 	\resumeSubheading{INFICON}{Syracuse, NY}{
-		\textbf{Software Engineering Team Lead}}{February 2021 - November 2021}
+		\textbf{Software Engineering Lead}}{October 2018 - November 2021}
 	\resumeItemListStart
 	\resumeItem{Leadership}{Serve as a technical mentor for junior engineers and interns. Creating tasks and acceptance criteria, writing on-boarding documentation.}
 	\hfill
 	\resumeItem{Technical Screening}{Responsible for technical screenings for potential hires. Directly responsible for filling several roles with very talented engineers.}
 	\resumeItem{Cross-Team Collab}{Worked closely with electrical and mechanical engineers to build product milestones and roadmaps. Lots of tandem work with electrical engineers for board layout, analog \& digital debugging, board bring-up and firmware APIs.}
-	\hfill
-	\resumeItemListEnd
-	\resumeSubheading{INFICON}{Syracuse, NY}{
-		\textbf{Software Engineer}}{October 2018 - February 2021}
-%   \resumeItemListStart
-	\resumeItemListStart
     \resumeItem{Full Stack}{Full-stack responsibilities ranging from front-end web development to bare-metal assembly code. Custom Linux kernel modules, board bring-up, multi-threaded application level programs, custom network layers on top of TCP/IP, and firmware interfacing.}
     \resumeItem{USB Events}{Wrote a library that propagates USB block device events to any listening clients.}
     \resumeItem{DBus Client}{Wrote library to control charging of smart batteries via qtdbus client calls.}

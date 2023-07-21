@@ -44,9 +44,9 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
 	\item\small{
-		\textbf{#1}{: #2 \vspace{-2pt}}
+		\textnormal{#1 \vspace{-2pt}}
 	}
 }
 
@@ -87,25 +87,32 @@
 	
 	\resumeSubheading{CableLabs}{Louisville, CO}{\textbf{Senior Software Engineer, Advanced Technology Group}}{July 2022 - Present}
 	\resumeItemListStart
-	\resumeItem{Mobile WiFi}{Developed and contributed to the implementation of Mobile WiFi, a patented CableLabs technology that virtualizes and mobilizes a Wi-Fi BSS for seamless access-point roaming.}
-	\resumeItem{IEEE/WFA}{Contributed to IEEE and Wi-Fi Alliance specifications for protocols, including R5 and R6 of the EasyMesh specification.}
-	\resumeItem{station-sniffer}{Wrote multi-threaded C++ userspace live Wi-Fi packet capture application (libpcap/libradiotap) that dynamically switches channels and bands, collecting and exposing PHY level metrics over Unix sockets via binary messaging protocol.}
-	\resumeItem{Topology Viewer}{Wrote a network topology visualization and debugging tool in Python. Talks to access points via HTTP-to-ubus proxy server. Canonically used for new feature demonstrations by CableLabs as well as the prpl Foundation.}
-	\resumeItem{prplOS}{Contributed to prplOS (fork of OpenWRT) by back-porting patches and libraries from upstream OpenWRT, and maintained package feeds against Qualcomm IPQ40xx SoC (802.11ac) based access points for internal CableLabs use.}
-	\resumeItem{ath10k/hostapd}{Wrote custom patches for ath10k and hostapd to allow novel ways of adding stations to existing networks.}
-	\resumeItem{prplMesh}{Contributed to an open-source Wi-Fi EasyMesh implementation. IEEE1905 MAC layer messaging between access points, decision-making algorithms for station roaming.}
-	\resumeItem{Innovation}{Contributed to a weekly innovation brainstorming session, directly leading to new research efforts, patents, and funding.}
-	\resumeItem{Research Outreach}{Represented CableLabs on various business trips, fostering partnerships with key cable, telecom, and silicon vendor companies (Qualcomm, Broadcom, Comcast, Liberty Global, Sagemcom) while showcasing and promoting innovative intellectual property developed by myself and my team.}
+	\resumeItem{Backport upstream OpenWRT patches to prplOS.}
+	\resumeItem{Developed Linux kernel patches (subsystems: network, wireless) against ath10k for Qualcomm IPQ40xx 802.11ac based SoCs.}
+	\resumeItem{Contributed to R6 of the Wi-Fi Alliance EasyMesh specification.}
+	\resumeItem{Developed MAC layer IEEE1905 messaging in an open-source EasyMesh implementation.}
+	\resumeItem{Developed Linux kernel module to expose PHY link metrics on access points.}
+	\resumeItem{Exposed BBF TR181 data model hooks for external control of access points.}
+	\resumeItem{POSIX userspace application code on access points.}
+	\resumeItem{Contributed to HTTP(S) to ubus proxy server.}
+	\resumeItem{Developed web UI for visualization of EasyMesh network topologies.}
+	\resumeItem{Patched hostapd to permit custom functionality and APIs.}
+	\resumeItem{Developed userspace network monitoring software for intelligent client roaming (nl80211, hostapd, IEEE1905)}
+	\resumeItem{Developed POSIX userspace process that collects PHY layer metadata about network traffic. Serves data via binary protocol over Unix sockets.}
+	\resumeItem{2 pending patents regarding novel Wi-Fi technologies.}
+	\resumeItem{Profiled roaming efficiency (tools: wireshark, tcpdump, custom software) of various Wi-Fi steering techniques (802.11v BTM, 802.11k, 802.11r)}
+	\resumeItem{Represented CableLabs during business trips, conferences, talks, technology demonstrations.}
+	\resumeItem{Serve as technical communication channel regarding novel Wi-Fi technologies for several CableLabs member companies.}
 	\resumeItemListEnd
 	
 	\resumeSubheading{QSC}{Boulder, CO}{\textbf{Software Engineer}}{Nov 2021 - July 2022}
 	\resumeItemListStart
-	\resumeItem{QSys}{Contributed to the development and maintenance of Q-SYS, a complete audio/video integration solution that handles over-the-air firmware updates, management, filtering, I/O expansion, and custom user control interfaces}
-	\resumeItem{Unit Testing}{Introduced unit testing to a large C++ Linux/Windows codebase using Doctest. Integrated coverage metrics with automated Jenkins builds.}
-	\resumeItem{Lua/C++}{Exposed various C++ APIs to our software solution's internal Lua runtime via libevent for customer scripting needs.}
-	\resumeItem{Kernel Modules}{Patched and maintained various upstream and out-of-tree kernel modules. Both bugfixing and modifications for in-house needs.}
-	\resumeItem{Performance Improvements}{Fixed numerous memory leaks in deployed products, improving stability and customer satisfaction leveraging tools like AddressSanitizer, gdb, and valgrind.}
-	\resumeItem{Multi-threaded Code}{Completed a complete refactoring of an internal C++ SNMP library to be multi-threaded and asynchronous, resulting in improved performance and reliability of the system over the legacy blocking implementation.}
+	\resumeItem{Developed and maintained Q-SYS, a software platform for managing networked audio/video equipment.}
+	\resumeItem{Developed, patched Linux device drivers (subsystems: PCI, PCIe) against Rockchip RK356x aarch64 SoCs.}
+	\resumeItem{Developed user interface components (C\# Windows, Qt for embedded touch panels, Objective-C for iOS/iPhone).}
+	\resumeItem{Developed asynchronous, multi-threaded SNMP library (1m requests/s, \textless10 ms latency).}
+	\resumeItem{Patched numerous memory leaks and hard faults that were causing customers deployed products to crash: AddressSanitizer (ASAN), gdb, valgrind.}
+	\resumeItem{Exposed C++ libraries to user-facing Lua scripting engine.}
 	\resumeItemListEnd
 	
 	
@@ -113,139 +120,132 @@
 	\resumeSubheading{INFICON}{Syracuse, NY}{
 		\textbf{Software Engineering Lead}}{October 2018 - November 2021}
 	\resumeItemListStart
-	\resumeItem{Leadership}{Serve as a technical mentor for junior engineers and interns. Creating tasks and acceptance criteria, writing on-boarding documentation.}
-	\hfill
-	\resumeItem{Technical Screening}{Responsible for technical screenings for potential hires. Directly responsible for filling several roles with very talented engineers.}
-	\resumeItem{Cross-Team Collab}{Worked closely with electrical and mechanical engineers to build product milestones and roadmaps. Lots of tandem work with electrical engineers for board layout, analog \& digital debugging, board bring-up and firmware APIs.}
-	\resumeItem{Full Stack}{Full-stack responsibilities ranging from front-end web development to bare-metal assembly code. Custom Linux kernel modules, board bring-up, multi-threaded application level programs, custom network layers on top of TCP/IP, and firmware interfacing.}
-	\resumeItem{USB Events}{Wrote a library that propagates USB block device events to any listening clients.}
-	\resumeItem{DBus Client}{Wrote library to control charging of smart batteries via qtdbus client calls.}
-	\resumeItem{Serial Kernel Driver}{Linux kernel driver that asynchronously (de)serializes data over USB.}
-	\resumeItem{Code Generator}{Python library which parses XML and generates C++ atomic accessors in a multithreaded codebase.}
-	\resumeItem{Build Pipeline}{Configured Jenkins server for continuous integration. Rejects/approves commits based on static analysis checks.}
-	%	\item{\textbf{GUIs}{Wrote GUI programs targetting desktop and embedded touchscreen applications. C++ (Qt, wxWidgets, MFC), C\# (WPF)}
-		\resumeItem{FPGA Memory over HTTP}{Wrote a web server to expose FPGA's memory map via RESTful API.}
-		\resumeItem{Firmware Replay}{Serialize FPGA messages to a SQLite database. Data queryable via message ID and timestamp.}
-		\resumeItem{FPGA Bootloader}{Wrote a platform agnostic library for programming Intel and Xilinx FPGAs.}
-		\resumeItem{Yocto}{Wrote Yocto BSPs and recipes for embedded Linux deployments on x86 boards.}
-		\resumeItem{Network Protocol}{Developed binary protocol on top of TCP/IP for low latency communication.}
-		\resumeItem{DMA Emulator}{Software-based DMA controller emulator in kernel-space to replace deprecated hardware.}
-		\resumeItemListEnd
+	\resumeItem{Lead software engineers in the development of mass spectrometers, gas chromatographs, and thin-film deposition monitors (4 direct reports).}
+	\resumeItem{Worked directly with customers to translate market feedback into actionable engineering items.}
+	\resumeItem{Served as a scrum master.}
+	\resumeItem{Developed complete embedded Linux systems for our products using Yocto: kernel, rootfs, device tree, device drivers, POSIX userspace applications.}
+	\resumeItem{Developed, extended, and backported Yocto BSPs for embedded x86 and ARM SoC deployment.}
+	\resumeItem{Developed Linux kernel drivers (subsystems: USB, network, TTY)}
+	\resumeItem{Developed Linux kernel driver and POSIX userspace hooks to emulate a 16 bit ISA DMA controller, replacing deprecated hardware with a software solution.}
+	\resumeItem{Developed custom protocol layer, standardized internally for a unified TCP API across our product line.}
+	\resumeItem{Developed cross platform library for bootloading Intel/Altera FPGAs from a host PC, or microcontroller.}
+	\resumeItem{Designed/developed firmware for embedded x86 and ARM deployments (I2C, USB2.0, RS232, RS485, SPI, watchdog timers).}
+	\resumeItem{Developed RS485 messaging front-end for Intel/Altera FPGAs (softcore NIOS II, VHDL).}
+	\resumeItem{Reverse engineered competitor product using IDA, gdb, binutils, wireshark, tcpdump.}
+	\resumeItem{Developed novel time-series data peak detection algorithm.}
+	\resumeItem{Reverse engineered and extended SHARC DSP assembly.}
+	\resumeItemListEnd
 		
-		\iffalse
-		\resumeSubheading
-		{KGB AVIATION SOLUTIONS, LLC.}{West Seneca, NY}
-		{\textbf{Student Embedded Engineer}}{January 2018 - May 2018}
-		\resumeItemListStart
+	\iffalse
+	\resumeSubheading
+	{KGB AVIATION SOLUTIONS, LLC.}{West Seneca, NY}
+	{\textbf{Student Embedded Engineer}}{January 2018 - May 2018}
+	\resumeItemListStart
+	
+	\resumeItem{FDR Interfacing Tool}{Worked with the company CEO and several other interns to build an interfacing system for flight data recorders (FDRs). }
+	\resumeItem{Reverse Engineering}{Sniffed an RS-422 bus to determine propriety hand-shaking serial packets.}
+	\resumeItem{FTDI}{Interfaced to a FTDI USB to serial chip from a Pine64 SBC to mock hand-shaking signals to flight data recorders, allowing data extraction.  Concurrently update a GUI over MIPI DSI.}
+	\iffalse
+	\resumeItem{Data Download}{Wrote a Python script which pulls data from the FDR and stores it to removable, non-volatile flash memory.}
+	\fi
+	\resumeItem{Shipped Product}{Managed to take an idea from the planning stages and progress to a tangible, secure, shippable embedded system in four months time.}
+	\resumeItemListEnd
+	\fi
 		
-		\resumeItem{FDR Interfacing Tool}{Worked with the company CEO and several other interns to build an interfacing system for flight data recorders (FDRs). }
-		\resumeItem{Reverse Engineering}{Sniffed an RS-422 bus to determine propriety hand-shaking serial packets.}
-		\resumeItem{FTDI}{Interfaced to a FTDI USB to serial chip from a Pine64 SBC to mock hand-shaking signals to flight data recorders, allowing data extraction.  Concurrently update a GUI over MIPI DSI.}
-		\iffalse
-		\resumeItem{Data Download}{Wrote a Python script which pulls data from the FDR and stores it to removable, non-volatile flash memory.}
-		\fi
-		\resumeItem{Shipped Product}{Managed to take an idea from the planning stages and progress to a tangible, secure, shippable embedded system in four months time.}
-		\resumeItemListEnd
-		\fi
-		
-		% -- Not so sure I need my grocery store experience any longer...
-		\iffalse
-		\resumeSubheading
-		{Hannaford Bros Supermarket}{Pine Bush, NY}
-		{\textbf{Customer Service Clerk}}{March 2014 - September 2015}
-		\resumeItemListStart
-		\resumeItem{Customer Service}
-		{Encouraged continued patronage in a small-town environment. Performed store maintenance. Worked in tandem with new hires to familiarize them with job duties.}
-		\vspace{1.5mm}
-		\resumeItemListEnd
-		\fi
-		
-		
-		\resumeSubHeadingListEnd  % -- END WORK EXPERIENCES
-		
-		
-		
-		
-		
-		\iffalse
-		%-----------PROJECTS-----------------
-		\section{Personal Projects}
-		\resumeSubHeadingListStart
-		\resumeSubItem{Chip8}
-		{Wrote an interpreter for the Chip8 language. Capable of playing Chip8 ROMs. C++, SDL2.} \vspace{1.5mm}
-		\resumeSubItem{Pongloader}{x86 assembly pong game that fits in a legacy boot sector.}
-		\vspace{1.5mm}
-		\iffalse
-		\resumeSubItem{Carduino}
-		{Write C code on an ATmega328P chip that controls servos and motors on an RC vehicle. Concurrently parse data from an ultrasonic sensor to calculate the vehicle's distance to things around it, changing the angle of the servos to avoid collisions accordingly. }\vspace{1.5mm}
-		\fi
-		\iffalse
-		\resumeSubItem{I'm Hungry}
-		{Full-stack developer for a Node.js Yelp clone. Integrated back-end and database MySQL functionality with AWS. Wrote registration, log-in, and session storing modules; regularly back-up database. }\vspace{1.5mm}
-		\fi
-		\resumeSubItem{MicroSpaceInvaders}{ASCII rendition of the 1978 arcade game written in ARM7 assembly language and C. Developed on bare-metal NXP LPC213x series of ARM microprocessor boards. Programmed and debugged over J-link JTAG.}
-		\resumeSubHeadingListEnd
-		\fi
-		
-		
-		\section{Patents}
-		\resumeSubHeadingListStart
-		\item{
-			\textbf{Encrypted Beacons}{: Method to encrypt IEEE802.11 Beacon Management Frames [Filed Provisional]}
-		}
-		\item{
-			\textbf{Bespoke Basic Service Set}{: Method for filtering association request management frames for specific stations and having the basic service set become 'unicast' [Filed Provisional] }
-		}
-		\resumeSubHeadingListEnd
-		
-		%
-		%--------PROGRAMMING SKILLS------------
-		\section{Open Source Contributions \href{https://gitlab.com/tpolomik}{\small gitlab.com/tpolomik} \href{https://github.com/tuckerpo}{\small github.com/tuckerpo}}
-		\resumeSubHeadingListStart
-		\item{
-			\textbf{\href{https://www.pidgin.im/}{Pidgin}}{: Worked on IBM/Sametime protocol layer. C, glib.} }
-		\item{
-			\textbf{\href{https://github.com/SerenityOS/serenity}{SerenityOS}}{: Worked on userspace Javascript engine. JSON schema validation. C++. 
-			} 
-		}
-		\resumeSubHeadingListEnd
-		
-		
-		
-		%
-		%--------PROGRAMMING SKILLS------------
-		\section{Programming \& Tooling}
-		\resumeSubHeadingListStart
-		\item{
-			\textbf{Languages}{: C, C++, C\#, Python, shell, assembly} }
-		\hfill
-		\item{
-			\textbf{Tools \& Frameworks}{: GNU tools, CMake, git, Yocto, Visual Studio, Qt, wxWidgets, MFC, WPF
-			}
-			\item{
-				\textbf{OS/Platforms}{: Linux, Windows, OpenWRT, FreeRTOS, Bare-metal.} }
-			\item {
-				\textbf{Hardware}{: Comfortable reading schematics \& using oscilloscopes, logic analyzers, multi-meters, etc.}}
-			
-			% -- Don't need notable courses past first job. Keep in case.
-			\iffalse
-			\item{\textbf{Notable Courses}{: Operating Systems, Machine Learning, Computer Vision, Hardware-Software Integration} }
-			\fi
+	% -- Not so sure I need my grocery store experience any longer...
+	\iffalse
+	\resumeSubheading
+	{Hannaford Bros Supermarket}{Pine Bush, NY}
+	{\textbf{Customer Service Clerk}}{March 2014 - September 2015}
+	\resumeItemListStart
+	\resumeItem{Customer Service}
+	{Encouraged continued patronage in a small-town environment. Performed store maintenance. Worked in tandem with new hires to familiarize them with job duties.}
+	\vspace{1.5mm}
+	\resumeItemListEnd
+	\fi
+	
+	
+	\resumeSubHeadingListEnd  % -- END WORK EXPERIENCES
+
+	\iffalse
+	%-----------PROJECTS-----------------
+	\section{Personal Projects}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Chip8}
+	{Wrote an interpreter for the Chip8 language. Capable of playing Chip8 ROMs. C++, SDL2.} \vspace{1.5mm}
+	\resumeSubItem{Pongloader}{x86 assembly pong game that fits in a legacy boot sector.}
+	\vspace{1.5mm}
+	\iffalse
+	\resumeSubItem{Carduino}
+	{Write C code on an ATmega328P chip that controls servos and motors on an RC vehicle. Concurrently parse data from an ultrasonic sensor to calculate the vehicle's distance to things around it, changing the angle of the servos to avoid collisions accordingly. }\vspace{1.5mm}
+	\fi
+	\iffalse
+	\resumeSubItem{I'm Hungry}
+	{Full-stack developer for a Node.js Yelp clone. Integrated back-end and database MySQL functionality with AWS. Wrote registration, log-in, and session storing modules; regularly back-up database. }\vspace{1.5mm}
+	\fi
+	\resumeSubItem{MicroSpaceInvaders}{ASCII rendition of the 1978 arcade game written in ARM7 assembly language and C. Developed on bare-metal NXP LPC213x series of ARM microprocessor boards. Programmed and debugged over J-link JTAG.}
+	\resumeSubHeadingListEnd
+	\fi
+	
+	
+	\section{Patents}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{Encrypted Beacons}{: Method to encrypt IEEE802.11 Beacon Management Frames [Filed Provisional]}
+	}
+	\item{
+		\textbf{Bespoke Basic Service Set}{: Method for filtering association request management frames for specific stations and having the basic service set become 'unicast' [Filed Provisional] }
+	}
+	\resumeSubHeadingListEnd
+	
+	%
+	%--------PROGRAMMING SKILLS------------
+	\section{Open Source Contributions \href{https://gitlab.com/tpolomik}{\small gitlab.com/tpolomik} \href{https://github.com/tuckerpo}{\small github.com/tuckerpo}}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{\href{https://www.pidgin.im/}{Pidgin}}{: Worked on IBM/Sametime protocol layer. C, glib.} }
+	\item{
+		\textbf{\href{https://github.com/SerenityOS/serenity}{SerenityOS}}{: Worked on userspace Javascript engine. JSON schema validation. C++. 
 		} 
-		\resumeSubHeadingListEnd
+	}
+	\resumeSubHeadingListEnd
+	
+	
+	
+	%
+	%--------PROGRAMMING SKILLS------------s
+	\section{Programming \& Tooling}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{Languages}{: C, C++, Python, shell, assembly} }
+	\hfill
+	\item{
+		\textbf{Tools \& Frameworks}{: GNU tools, CMake, git, Yocto, Visual Studio, Qt, wxWidgets, MFC, WPF
+		}
+		\item{
+			\textbf{OS/Platforms}{: Linux, Windows, OpenWRT, FreeRTOS, Bare-metal.} }
+		\item {
+			\textbf{Hardware}{: Comfortable reading schematics \& using oscilloscopes, logic analyzers, multi-meters, etc.}}
 		
-		%-----------EDUCATION-----------------
-		\section{Education}
-		\resumeSubHeadingListStart
-		\resumeSubheading
-		{University at Buffalo, School of Engineering}{Buffalo, NY}
-		{Bachelor of Science, Computer Engineering, Applied Math}{Awarded September 2018}
-		\resumeSubheading
-		{Linux Foundation}{Syracuse, NY}
-		{Linux Foundation Certified Engineer - Linux Kernel Internals}{Awarded December 2019}
-		\resumeSubHeadingListEnd
-		
-		
+		% -- Don't need notable courses past first job. Keep in case.
+		\iffalse
+		\item{\textbf{Notable Courses}{: Operating Systems, Machine Learning, Computer Vision, Hardware-Software Integration} }
+		\fi
+	} 
+	\resumeSubHeadingListEnd
+	
+	%-----------EDUCATION-----------------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{University at Buffalo, School of Engineering}{Buffalo, NY}
+	{Bachelor of Science, Computer Engineering, Applied Math}{Awarded September 2018}
+	\resumeSubheading
+	{Linux Foundation}{Syracuse, NY}
+	{Linux Foundation Certified Engineer - Linux Kernel Internals}{Awarded December 2019}
+	\resumeSubHeadingListEnd
+	
+	
 		
 		
 		%-------------------------------------------

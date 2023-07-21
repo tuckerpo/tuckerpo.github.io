@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	C:/code/personal_website/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/3185b289/
+.content	css/about.css	/^.content{$/;"	c
+.content	css/header.css	/^.content{$/;"	c
+.inner	css/about.css	/^.inner{$/;"	c
+.inner	css/header.css	/^.inner{$/;"	c
+.outer	css/about.css	/^.outer{$/;"	c
+.outer	css/header.css	/^.outer{$/;"	c
+AnonymousFunctioncbf1f19e0100	js/sketch.js	/^  drops.forEach(function(d) {$/;"	f
+B.S. Computer Engineering, University at Buffalo	extra/about.html	/^               <h3>B.S. Computer Engineering, University at Buffalo<span id=cursor><\/span> <\/h/;"	j
+Drop	js/sketch.js	/^function Drop() {$/;"	c
+Education	tex/TuckerPoSW.tex	/^	\\section{Education}$/;"	s
+Education	tex/TuckerPolomikLatest.tex	/^		\\section{Education}$/;"	s
+Education	tex/TuckerPolomikNGNew.tex	/^ \\section{Education}$/;"	s
+Experience	tex/TuckerPoSW.tex	/^	\\section{Experience}$/;"	s
+Experience	tex/TuckerPolomikLatest.tex	/^	\\section{Experience}$/;"	s
+Experience	tex/TuckerPolomikNGNew.tex	/^\\section{Experience}$/;"	s
+Experience working in cross-functional, agile teams building complex systems.	extra/about.html	/^               <h2>Experience working in cross-functional, agile teams building complex systems./;"	i
+Git mirror -> buffalo.edu/~tuckerpo	README.md	/^### Git mirror -> buffalo.edu\/~tuckerpo/;"	S
+Open Source Contributions \\href{https://gitlab.com/tpolomik}{\\small gitlab.com/tpolomik} \\href{https://github.com/tuckerpo}{\\small github.com/tuckerpo}	tex/TuckerPoSW.tex	/^	\\section{Open Source Contributions \\href{https:\/\/gitlab.com\/tpolomik}{\\small gitlab.com\//;"	s
+Open Source Contributions \\href{https://gitlab.com/tpolomik}{\\small gitlab.com/tpolomik} \\href{https://github.com/tuckerpo}{\\small github.com/tuckerpo}	tex/TuckerPolomikLatest.tex	/^		\\section{Open Source Contributions \\href{https:\/\/gitlab.com\/tpolomik}{\\small gitlab.com\//;"	s
+Patents	tex/TuckerPoSW.tex	/^	\\section{Patents}$/;"	s
+Patents	tex/TuckerPolomikLatest.tex	/^		\\section{Patents}$/;"	s
+Personal Projects	tex/TuckerPoSW.tex	/^	\\section{Personal Projects}$/;"	s
+Personal Projects	tex/TuckerPolomikLatest.tex	/^		\\section{Personal Projects}$/;"	s
+Personal Projects	tex/TuckerPolomikNGNew.tex	/^\\section{Personal Projects}$/;"	s
+Programming \\& Tooling	tex/TuckerPoSW.tex	/^	\\section{Programming \\& Tooling}$/;"	s
+Programming \\& Tooling	tex/TuckerPolomikLatest.tex	/^		\\section{Programming \\& Tooling}$/;"	s
+Programming \\& Tooling	tex/TuckerPolomikNGNew.tex	/^\\section{Programming \\& Tooling}$/;"	s
+\\resumeItem	tex/TuckerPoSW.tex	/^\\newcommand{\\resumeItem}[2]{$/;"	C
+\\resumeItem	tex/TuckerPolomikLatest.tex	/^\\newcommand{\\resumeItem}[2]{$/;"	C
+\\resumeItem	tex/TuckerPolomikNGNew.tex	/^\\newcommand{\\resumeItem}[2]{$/;"	C
+\\resumeItemListEnd	tex/TuckerPoSW.tex	/^	\\newcommand{\\resumeItemListEnd}{\\end{itemize}\\vspace{-5pt}}$/;"	C
+\\resumeItemListEnd	tex/TuckerPolomikLatest.tex	/^	\\newcommand{\\resumeItemListEnd}{\\end{itemize}\\vspace{-5pt}}$/;"	C
+\\resumeItemListEnd	tex/TuckerPolomikNGNew.tex	/^\\newcommand{\\resumeItemListEnd}{\\end{itemize}\\vspace{-5pt}}$/;"	C
+\\resumeItemListStart	tex/TuckerPoSW.tex	/^\\newcommand{\\resumeItemListStart}{\\begin{itemize}}$/;"	C
+\\resumeItemListStart	tex/TuckerPolomikLatest.tex	/^\\newcommand{\\resumeItemListStart}{\\begin{itemize}}$/;"	C
+\\resumeItemListStart	tex/TuckerPolomikNGNew.tex	/^\\newcommand{\\resumeItemListStart}{\\begin{itemize}}$/;"	C
+\\resumeSubHeadingListEnd	tex/TuckerPoSW.tex	/^	\\newcommand{\\resumeSubHeadingListEnd}{\\end{itemize}}$/;"	C
+\\resumeSubHeadingListEnd	tex/TuckerPolomikLatest.tex	/^	\\newcommand{\\resumeSubHeadingListEnd}{\\end{itemize}}$/;"	C
+\\resumeSubHeadingListEnd	tex/TuckerPolomikNGNew.tex	/^\\newcommand{\\resumeSubHeadingListEnd}{\\end{itemize}}$/;"	C
+\\resumeSubHeadingListStart	tex/TuckerPoSW.tex	/^\\newcommand{\\resumeSubHeadingListStart}{\\begin{itemize}[leftmargin=*]}$/;"	C
+\\resumeSubHeadingListStart	tex/TuckerPolomikLatest.tex	/^\\newcommand{\\resumeSubHeadingListStart}{\\begin{itemize}[leftmargin=*]}$/;"	C
+\\resumeSubHeadingListStart	tex/TuckerPolomikNGNew.tex	/^\\newcommand{\\resumeSubHeadingListStart}{\\begin{itemize}[leftmargin=*]}$/;"	C
+\\resumeSubItem	tex/TuckerPoSW.tex	/^\\newcommand{\\resumeSubItem}[2]{\\resumeItem{#1}{#2}\\vspace{-4pt}}$/;"	C
+\\resumeSubItem	tex/TuckerPolomikLatest.tex	/^\\newcommand{\\resumeSubItem}[2]{\\resumeItem{#1}{#2}\\vspace{-4pt}}$/;"	C
+\\resumeSubItem	tex/TuckerPolomikNGNew.tex	/^\\newcommand{\\resumeSubItem}[2]{\\resumeItem{#1}{#2}\\vspace{-4pt}}$/;"	C
+\\resumeSubheading	tex/TuckerPoSW.tex	/^\\newcommand{\\resumeSubheading}[4]{$/;"	C
+\\resumeSubheading	tex/TuckerPolomikLatest.tex	/^\\newcommand{\\resumeSubheading}[4]{$/;"	C
+\\resumeSubheading	tex/TuckerPolomikNGNew.tex	/^\\newcommand{\\resumeSubheading}[4]{$/;"	C
+a	css/header.css	/^a,body{$/;"	s
+acceleration	js/sketch.js	/^var acceleration = 0.0098;$/;"	v
+body	css/header.css	/^a,body{$/;"	s
+body	css/header.css	/^body,html{$/;"	s
+body	css/header.css	/^body{$/;"	s
+draw	js/sketch.js	/^  this.draw = function() {$/;"	m	class:Drop
+draw	js/sketch.js	/^function draw() {$/;"	f
+drawAndDrop	js/sketch.js	/^  this.drawAndDrop = function() {$/;"	m	class:Drop
+drop	js/sketch.js	/^  this.drop = function() {$/;"	m	class:Drop
+drops	js/sketch.js	/^var drops = [];$/;"	v
+h1	css/header.css	/^h1,h3{$/;"	s
+h1	css/header.css	/^h1{$/;"	s
+h3	css/header.css	/^h1,h3{$/;"	s
+h3	css/header.css	/^h3{$/;"	s
+html	css/header.css	/^body,html{$/;"	s
+initX	js/sketch.js	/^  this.initX = function() {$/;"	m	class:Drop
+initY	js/sketch.js	/^  this.initY = function() {$/;"	m	class:Drop
+li	css/header.css	/^li{$/;"	s
+nDrops	js/sketch.js	/^var nDrops = 1000;$/;"	v
+setup	js/sketch.js	/^function setup() {$/;"	f
+ul	css/header.css	/^ul{$/;"	s
+windowResized	js/sketch.js	/^function windowResized() {$/;"	f

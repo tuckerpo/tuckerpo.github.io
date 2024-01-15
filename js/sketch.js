@@ -6,7 +6,6 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index','-1');
- // console.log(canvas.style());
   for (i = 0; i < nDrops; i++) {
     drops.push(new Drop());
   }
@@ -15,9 +14,13 @@ function setup() {
 function draw() {
   clear();
   background(105,105,105);
-  drops.forEach(function(d) {
-    d.drawAndDrop();
-  });
+  for (let i = drops.length - 1; i >= 0; i--) {
+    drops[i].drawAndDrop();
+    if (drops[i].offScreen()) {
+      drops.splice(i, 1); // Remove drop if off-screen
+      drops.push(new Drop()); // Add a new drop to maintain the desired number
+    }
+  }
 }
 
 function windowResized() {
@@ -57,4 +60,8 @@ function Drop() {
       this.initX();
     }
   };
+
+  this.offScreen = function() {
+    return (this.y > windowHeight);
+  }
 }

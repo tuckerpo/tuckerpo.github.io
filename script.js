@@ -36,7 +36,7 @@ const addFinalNode = () => {
     timeline.querySelector('ul').appendChild(finalNode);
     setInterval(() => {
         const now = new Date().toLocaleString();
-        finalNode.querySelector('h3').textContent = `${now}: Inveting the Future at CableLabs...`;
+        finalNode.querySelector('h3').textContent = `${now}: Inventing the Future at CableLabs...`;
         finalNode.querySelector('p').textContent = `Stay tuned.`;
     }, 1000);
 }

@@ -50,13 +50,33 @@
 	}
 }
 
+%\newcommand{\resumeSubheading}[4]{
+%	\vspace{-1pt}\item
+%	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%		\textbf{#1} & #2 \\
+%		\textit{\small#3} & \textit{\small #4} \\
+%	\end{tabular*}\vspace{-5pt}
+%}
+
+\newcommand{\resumeSubHeadingWithPromotion}[6]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		#3 & #4 \\
+		\textbf{#5} & #6 \\
+	\end{tabular*}
+	\vspace{-5pt}
+}
+
 \newcommand{\resumeSubheading}[4]{
 	\vspace{-1pt}\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
-		\textit{\small#3} & \textit{\small #4} \\
-	\end{tabular*}\vspace{-5pt}
+		#3 & #4 \\
+	\end{tabular*}
+	\vspace{-5pt}
 }
+
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
@@ -85,16 +105,16 @@
 	\section{Experience}
 	\resumeSubHeadingListStart
 	
-	\resumeSubheading{CableLabs}{Louisville, CO}{\textbf{Senior Software Engineer, Advanced Technology Group}}{July 2022 - Present}
+	\resumeSubHeadingWithPromotion{CableLabs}{Louisville, CO}{\textbf{Lead Software Architect}}{August 2024 - Present}{Senior Software Engineer}{July 2022 - August 2024}
 	\resumeItemListStart
-	\resumeItem{Made upstream contributions to open-source networking projects including OpenWRT, prplOS, RDK-B, prplMesh, and hostapd.}
-	\resumeItem{Hacked on kernel drivers for Qualcomm IPQ40xx and IPQ80xx Wi-Fi SoCs (ath10k, ath11k, ath12k)}
+	\resumeItem{Made upstream contributions to open-source networking projects such as OpenWRT, prplOS, RDK-B, prplMesh, and hostapd.}
+	\resumeItem{Hacked on kernel drivers for Qualcomm IPQ40xx and IPQ80xx Wi-Fi SoCs (ath10k, ath11k)}
 	\resumeItem{Wrote a Python/JavaScript web UI for visualizing EasyMesh network topologies.}
 	\resumeItem{Wrote a Java/C++ application that interfaces to power meters for automated hardware-in-the-loop testing.}
 	\resumeItem{Worked on various networking innovation projects, resulting in several pending patents.}
 	\resumeItem{Developed Mobile WiFi, a novel technology that facilitates seamless WiFi client roaming between different physical access points. This innovation, adopted by cable industry leader Liberty Global, ensures uninterrupted WiFi connectivity while users are on the move.}
 	\resumeItem{Hired, on-boarded, and mentored interns and junior engineers.}
-	\resumeItem{Architected and implemented system that allows users to configure and converse with their WiFi routers using natural language. (C, node.js, JavaScript, HTML, CSS)}
+	\resumeItem{Architected and implemented a system that allows users to configure and converse with their WiFi routers using natural language. (C, node.js, JavaScript, HTML, CSS)}
 	\resumeItem{Developed POSIX userspace process that collects PHY layer metadata about network traffic. Serves data via binary protocol over Unix/TCP sockets.}
 	\resumeItem{Represented CableLabs at conferences, talks, and technology demonstrations, acting as a technical communication channel for novel networking technologies.}
 	\resumeItemListEnd
@@ -109,11 +129,11 @@
 	\resumeItemListEnd
 	
 	
-	
-	\resumeSubheading{INFICON}{Syracuse, NY}{
-		\textbf{Software Engineering Lead}}{October 2018 - November 2021}
+	\resumeSubHeadingWithPromotion{INFICON}{Syracuse, NY}{\textbf{Software Engineering Lead}}{July 2020 - November 2021}{\textbf{Software Engineer}}{September 2018 - July 2020}
+%	\resumeSubheading{INFICON}{Syracuse, NY}{
+%		\textbf{Software Engineering Lead}}{October 2018 - November 2021}
 	\resumeItemListStart
-	\resumeItem{Lead software engineers in the development of mass spectrometers, gas chromatographs, and thin-film deposition monitors (4 direct reports).}
+	\resumeItem{Led software engineers in the development of mass spectrometers, gas chromatographs, and thin-film deposition monitors (3 direct reports).}
 	\resumeItem{Worked closely with customers to translate market feedback into engineering solutions and served as a scrum master.}
 	\resumeItem{Developed complete embedded Linux systems for our products using Yocto: kernel, rootfs, device tree, device drivers, POSIX userspace applications.}
 	\resumeItem{Developed, extended, and backported Yocto BSPs for embedded x86 and ARM SoC deployment.}
@@ -123,7 +143,7 @@
 	\resumeItem{Developed cross platform library for bootloading Intel/Altera FPGAs from a host PC, or microcontroller.}
 	\resumeItem{Designed/developed firmware for embedded x86 and ARM deployments (I2C, USB2.0, RS232, RS485, SPI, watchdog timers).}
 	\resumeItem{Developed RS485 messaging front-end for Intel/Altera FPGAs (softcore NIOS II, VHDL).}
-	\resumeItem{Reverse engineered competitor product using IDA, gdb, binutils, wireshark, tcpdump.}
+	\resumeItem{Reverse engineered a competitor product using IDA, gdb, binutils, wireshark, tcpdump.}
 	\resumeItem{Developed novel time-series data peak detection algorithm.}
 	\resumeItem{Reverse engineered and extended SHARC DSP assembly.}
 	\resumeItemListEnd
@@ -197,6 +217,9 @@
 	\item{
 		\textbf{Method for Detecting Path Obstructions Between 802.11 Access Points and Clients}{: Estimate a WiFi access point's location and RF path using noise measurements. [Filed Provisional].}
 	}
+	\item{
+		\textbf{NetLLM}{: Method for configuring and debugging a wireless home network using natural language. [Filed Non-Provisional]}
+	}
 	\resumeSubHeadingListEnd
 	
 	\section{Publications}
@@ -209,11 +232,26 @@
 	%--------PROGRAMMING SKILLS------------
 	\section{Open Source Contributions \href{https://gitlab.com/tpolomik}{\small gitlab.com/tpolomik} \href{https://github.com/tuckerpo}{\small github.com/tuckerpo}}
 	\resumeSubHeadingListStart
+%	\item{
+%		\textbf{\href{https://www.pidgin.im/}{Pidgin}}{: Worked on IBM/Sametime protocol layer. C, glib.} }
+%	\item{
+%		\textbf{\href{https://github.com/SerenityOS/serenity}{SerenityOS}}{: Worked on userspace Javascript engine. JSON schema validation. C++. 
+%		} 
+%	}
 	\item{
-		\textbf{\href{https://www.pidgin.im/}{Pidgin}}{: Worked on IBM/Sametime protocol layer. C, glib.} }
+		\textbf{\href{https://gitlab.com/prpl-foundation/prplmesh/prplMesh}{prplMesh}}{: Major contributor to the prpl Foundation's implementation of the Wi-Fi EasyMesh standard. Principally developed most of the Virtual BSS (VBSS) feature defined in R6 of the EasyMesh standard. C++}
+	}
 	\item{
-		\textbf{\href{https://github.com/SerenityOS/serenity}{SerenityOS}}{: Worked on userspace Javascript engine. JSON schema validation. C++. 
-		} 
+		\textbf{\href{https://gitlab.com/prpl-foundation/prplos}{prplOS}}{: I contributed to the prpl Foundation's fork of OpenWRT, canonically named prplOS. My contributions included backporting of upstream OpenWRT packages, novel packages, and patches to both the Linux kernel as well as hostapd.}	
+	}
+	\item{
+		\textbf{\href{https://gitlab.com/prpl-foundation/prplmesh/topologyviewer}{topologyViewer}}{: Python web application that enumerates and visualizes WiFi EasyMesh networks. Used extensively by the prpl Foundation to demonstrate prplMesh features. Additionally serves as a CPE/STA management platform, allowing users to graphically steer clients between different physical access points, remotely.}	
+	}
+	\item{
+		\textbf{\href{https://gitlab.com/prpl-foundation/prplmesh/stationsniffer}{stationSniffer}}{: Linux userspace C++ application that sniffs Wi-Fi frames and coalesces different PHY layer metrics about a network, including RSSI, MCS index, and noise. Data is served via Unix or TCP sockets to clients who can leverage this metadata to make intelligent decisions about a network, such as steering a client device to a more suitable access point.}
+	}
+	\item{
+		\textbf{\href{https://github.com/sysprog21/lkmpg/blob/master/contrib.tex}{Linux Kernel Module Programming Guide (LKMPG)}}{: Audit and submit changes to the Linux Kernel Modules Programming Guide. Changes include fixing function and structure signatures, correcting typos, and adding additional information for Linux kernel subsystems I am familiar with and have developed for.}
 	}
 	\resumeSubHeadingListEnd
 	
